@@ -1,0 +1,28 @@
+:host(.flash) .component-node {
+    animation-name: flash;
+    animation-duration: 500ms;
+}
+
+.component-node {
+    align-items: center;
+    background-color: white;
+    border: solid 2px black;
+    display: flex;
+    font-family: monospace, sans-serif;
+    justify-content: center;
+    height: 26px;
+    position: absolute;
+    width: 26px;
+}
+
+@keyframes flash {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: deepskyblue;
+    }
+    100% {
+        background-color: white;
+    }
+}

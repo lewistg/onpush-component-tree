@@ -1,0 +1,9 @@
+<div 
+    class="tree-container"
+    [ngStyle]="sizeStyles"
+>
+    <component-tree-node
+        *ngIf="!!rootNode"
+        [node]="rootNode"
+    ></component-tree-node>
+</div>

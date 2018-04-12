@@ -1,0 +1,17 @@
+<component-tree-edge 
+    *ngFor="let childNode of node.children"
+    [startNode]="node"
+    [endNode]="childNode"
+></component-tree-edge>
+<div 
+    #highlightTarget
+    class="component-node"
+    [ngStyle]="positionStyle"
+    (click)="onClickMarkForCheck()"
+>C</div>
+<component-tree-node *ngFor="let childNode of node.children"
+    [node]="childNode"
+></component-tree-node>
+
+<span [noop]="changeDetectionCanary"></span>
+    
