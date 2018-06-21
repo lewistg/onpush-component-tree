@@ -6,7 +6,7 @@ import {ReadonlyGraphNode} from './../graph/graphnode';
 
 /**
  * A component that renders its tree of child components as a literal tree with
- * nodes and lines indicating parent child relationships. The tree is a
+ * nodes and edges indicating parent child relationships. The tree is a
  * complete binary tree.
  */
 @Component({
