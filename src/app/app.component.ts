@@ -20,7 +20,7 @@ export class AppComponent {
 
     public domHighlights = new EventEmitter<HTMLElement>();
     constructor(lifecycleHooksLog: LifecycleHooksLog) {
-        this.periodizedLogEntries = periodizedObservable(lifecycleHooksLog.entries, 300);
+        this.periodizedLogEntries = periodizedObservable(lifecycleHooksLog.entries, 150);
         this.periodizedLogEntries 
             .map((logEntry: LifecycleHooksLogEntry) => {
                 if (isHighlightableComponent(logEntry.component)) {
